@@ -46,6 +46,7 @@ Access to `usr/bin` is restricted after Catalina 2019. A semi-secure work around
 $ mkdir ~/bin
 $ export PATH="${HOME}/bin:${PATH}" 
 $ curl -sL https://github.com/onilton/ogl/releases/download/v0.0.2/ogl-macos.tar | tar x -C ~/bin/
+$ chmod -R go-w ${HOME}/bin
 ```
 
 ## Config file
