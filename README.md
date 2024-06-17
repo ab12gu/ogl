@@ -39,11 +39,12 @@ $ wget -qO- https://github.com/onilton/ogl/releases/download/v0.0.2/ogl-macos.ta
 ```
 
 Access to `usr/bin` is restricted after Catalina 2019. A semi-secure work around is to create a new bin folder (in home directory for example) and link to PATH:
-*Feel free to use wget instead of curl
+\*Feel free to use wget instead of curl
+\*Add export path line to `.bashrc` for OS X or `.zshrc` for perminant usage
 
 ```
 $ mkdir ~/bin
-$ export PATH=".:${HOME}/bin:${PATH}" 
+$ export PATH="${HOME}/bin:${PATH}" 
 $ curl -sL https://github.com/onilton/ogl/releases/download/v0.0.2/ogl-macos.tar | tar x -C ~/bin/
 ```
 
